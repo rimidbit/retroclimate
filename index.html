@@ -13,41 +13,45 @@
     <div class="head__top-line">
         <div class="container">
             <div class="head__top-line-items">
-                <div class="head__top-line__delivery">
-                    <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/svg/svg-symbols.svg#pin"></use>
-                    </svg>
-                    <span>Доставка по всей территории России !</span>
+                <div class="head__top-line--delivery-search-working">
+                    <div class="head__top-line__delivery">
+                        <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#pin"></use>
+                        </svg>
+                        <span>Доставка по всей территории России !</span>
+                    </div>
+                    <div class="head__top-line__search">
+                        <form action="search" method="get" class="head__top-line__form-search">
+                            <input name="s" placeholder="Искать здесь..." type="search" class="head__top-line__form-input">
+                            <button type="submit" class="head__top-line__button">
+                                <svg class="site-icon head__top-line__button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.2 485.2">
+                                    <use xlink:href="img/svg/svg-symbols.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="head__top-line__working-hours">
+                        <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#clock"></use>
+                        </svg>
+                        <span>с 9:00 до 22:00 без выходных</span>
+                    </div>
                 </div>
-                <div class="head__top-line__search">
-                    <form action="search" method="get" class="head__top-line__form-search">
-                        <input name="s" placeholder="Искать здесь..." type="search" class="head__top-line__form-input">
-                        <button type="submit" class="head__top-line__button">
-                            <svg class="site-icon head__top-line__button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.2 485.2">
-                                <use xlink:href="img/svg/svg-symbols.svg#search"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-                <div class="head__top-line__working-hours">
-                    <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/svg/svg-symbols.svg#clock"></use>
-                    </svg>
-                    <span>с 9:00 до 22:00 без выходных</span>
-                </div>
-                <div class="head__top-line__email">
-                    <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/svg/svg-symbols.svg#contact"></use>
-                    </svg>
-                    <address>info@retro-climat.me</address>
-                </div>
-                <div class="head__top-line__login">
-                    <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
-                    </svg>
-                    <a href="#">Вход</a>
-                    <span>/</span>
-                    <a href="#">Регистрация</a>
+                <div class="head__top-line--email-login">
+                    <div class="head__top-line__email">
+                        <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#contact"></use>
+                        </svg>
+                        <address>info@retro-climat.me</address>
+                    </div>
+                    <div class="head__top-line__login">
+                        <svg class="site-icon head__top-line__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                        </svg>
+                        <a href="#">Вход</a>
+                        <span>/</span>
+                        <a href="#">Регистрация</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,12 +59,12 @@
     <div class="head__general">
         <div class="container">
             <div class="head__general-items">
-                <div class="head__general__logo">
+                <div class="head__general__logo head__general-item">
                     <a href="index.html">
                         <img src="images/logo.png" alt="retroclimat">
                     </a>
                 </div>
-                <div class="head__general__phones">
+                <div class="head__general__phones head__general-item">
                     <svg class="site-icon head__general__phones__icon" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
                     </svg>
@@ -69,13 +73,13 @@
                         <address>8 (499) 390 - 73 - 32</address>
                     </div>
                 </div>
-                <div class="head__general__call-my">
+                <div class="head__general__call-my head__general-item">
                     <a href="#">
                         <img src="img/phone.png" alt="#">
                         <span class="head__general__call-my__text">ПЕРЕЗВОНИМ СЕЙЧАС</span>
                     </a>
                 </div>
-                <div class="head__general__nav">
+                <div class="head__general__nav head__general-item">
                     <div class="head__general__cart">
                         <a href="#">
                             <svg class="site-icon head__general__cart__icon" xmlns="http://www.w3.org/2000/svg">
@@ -102,8 +106,9 @@
                 </div>
             </div>
         </div>
+        <a class="head-menu-button" href="#">MENU</a>
     </div>
-    <nav class="nav">
+    <nav class="nav nav-mob">
         <a href="#">каталог товаров</a>
         <a href="conditioners.html">кондиционеры</a>
         <a href="#">доставка</a>
@@ -377,6 +382,7 @@
             <h2 class="h2">АКЦИИ И СКИДКИ</h2>
             <div class="main__stock__slider">
                 <div class="main__stock__slider-items">
+                    <img src="images/slid-sale.jpg" alt="#">
                     <div class="main__stock__slider-text">
                         <h2 class="h2 main__stock__slider-h2">ПОЛУЧИТЕ СКИДКУ <span>7%</span></h2>
                         <p>Просто закажите более двух кондиционеров<br> и получите наше щедрое предложение</p>
