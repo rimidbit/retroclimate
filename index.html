@@ -392,8 +392,18 @@
                 <div class="main__stock__form">
                     <p>ХОТИТЕ <br>ПОЛУЧИТЬ <br>СКИДКУ ПРЯМО <br>СЕЙЧАС ?</p>
                     <form action="stock" method="get" class="main__stock__form-items">
-                        <input name="s" placeholder="Ваше имя" type="stock" class="main__stock__form-name">
-                        <input name="s" placeholder="Ваш телефон" type="stock" class="main__stock__form-phone">
+                        <div class="main__consultation__form__input">
+                            <input class="main__stock__form-name" name="stock-name" placeholder="Ваше имя" type="stock">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                            </svg>
+                        </div>
+                        <div class="main__consultation__form__input">
+                            <input name="stock-phone" placeholder="Ваш телефон" type="stock" class="main__stock__form-phone">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                            </svg>
+                        </div>
                         <button type="submit" class="main__stock__button">
                             хочу !
                         </button>
@@ -532,7 +542,12 @@
             </div>
             <div class="main__instruction__bid">
                 <form action="bid" method="get" class="main__instruction__bid__form">
-                    <input name="s" placeholder="Ваш телефон" type="bid" class="main__instruction__bid__form-phone">
+                    <div class="main__instruction__bid__form-input">
+                        <input name="s" placeholder="Ваш телефон" type="bid" class="main__instruction__bid__form-phone">
+                        <svg class="site-icon form__icon instruction__form__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                        </svg>
+                    </div>
                     <button type="submit" class="main__instruction__bid__button">
                         оставить заявку
                     </button>
@@ -624,9 +639,19 @@
             <div class="main__consultation-items">
                 <div class="main__consultation__form">
                     <p>ПОЛУЧИТЬ <br>КОНСУЛЬТАЦИЮ <br>МЕНЕДЖЕРА <br>БЕСПЛАТНО</p>
-                    <form action="stock" method="get" class="main__consultation__form-items">
-                        <input name="s" placeholder="Ваше имя" type="stock" class="main__consultation__form-name">
-                        <input name="s" placeholder="Ваш телефон" type="stock" class="main__consultation__form-phone">
+                    <form action="consult" method="get" class="main__consultation__form-items">
+                        <div class="main__consultation__form__input">
+                            <input class="main__consultation__form-name" name="s" placeholder="Ваше имя" type="consult">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                            </svg>
+                        </div>
+                        <div class="main__consultation__form__input">
+                            <input name="s" placeholder="Ваш телефон" type="consult" class="main__consultation__form-phone">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                            </svg>
+                        </div>
                         <button type="submit" class="main__consultation__button">
                             получить
                         </button>
