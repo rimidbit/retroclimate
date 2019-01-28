@@ -81,7 +81,7 @@
                 </div>
                 <div class="head__general__nav head__general-item">
                     <div class="head__general__cart">
-                        <a href="#">
+                        <a href="cart.html">
                             <svg class="site-icon head__general__cart__icon" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="img/svg/svg-symbols.svg#shopping-cart"></use>
                             </svg>
@@ -109,14 +109,14 @@
         <a class="head-menu-button" href="#">MENU</a>
     </div>
     <nav class="nav nav-mob">
-        <a href="#">каталог товаров</a>
+        <a href="split-systems.html">каталог товаров</a>
         <a href="conditioners.html">кондиционеры</a>
-        <a href="#">доставка</a>
-        <a href="#">монтаж</a>
-        <a href="#">обслуживание</a>
+        <a href="delivery-installation.html">доставка</a>
+        <a href="delivery-installation.html">монтаж</a>
+        <a href="service.html">обслуживание</a>
         <a href="#">гарантия</a>
-        <a href="#">акции</a>
-        <a href="#">контакты</a>
+        <a href="stock-sale-general.html">акции</a>
+        <a href="contacts.html">контакты</a>
     </nav>
 </header>
 <div class="head__bread-crumbs">
@@ -368,8 +368,18 @@
             <div class="main__catalog__consultation">
                 <span>Получите<br>консультацию<br>менеджера<br>бесплатно</span>
                 <form action="search" method="get" class="main__catalog__consultation__form">
-                    <input name="s" placeholder="Ваше имя" type="search" class="main__catalog__consultation__form-name">
-                    <input name="s" placeholder="Ваш телефон" type="search" class="main__catalog__consultation__form-phone">
+                    <div class="main__consultation__form__input">
+                        <input class="main__stock__form-name" name="stock-name" placeholder="Ваше имя" type="stock">
+                        <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                        </svg>
+                    </div>
+                    <div class="main__consultation__form__input">
+                        <input name="stock-phone" placeholder="Ваш телефон" type="stock" class="main__stock__form-phone">
+                        <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                        </svg>
+                    </div>
                     <button type="submit" class="main__catalog__consultation__button">
                         получить консультацию
                     </button>
