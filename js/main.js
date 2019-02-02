@@ -94,7 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _module = __webpack_require__(/*! ./modules/module1 */ \"./src/js/modules/module1.js\");\n\nconsole.log((0, _module.sum)(1, 5));\nvar a = 12;\nvar b = 'Test';\ndocument.body.addEventListener('click', function (_ref) {\n  var target = _ref.target;\n  console.log(target);\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("\n\nvar _module = __webpack_require__(/*! ./modules/module1 */ \"./src/js/modules/module1.js\");\n\n__webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n\nconsole.log((0, _module.sum)(1, 5));\nvar a = 12;\nvar b = 'Test';\ndocument.body.addEventListener('click', function (_ref) {\n  var target = _ref.target;\n  console.log(target);\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/menu.js":
+/*!********************************!*\
+  !*** ./src/js/modules/menu.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nfunction openMenu() {\n  document.getElementById(\"nav-mob\").classList.toggle('active');\n}\n\n//# sourceURL=webpack:///./src/js/modules/menu.js?");
 
 /***/ }),
 
