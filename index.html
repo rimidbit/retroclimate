@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no,address=no">
     <meta name="theme-color" content="#4285f4">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <header class="head">
     <div class="head__top-line">
@@ -106,18 +107,20 @@
                 </div>
             </div>
         </div>
-        <a class="head-menu-button" href="#">MENU</a>
+        <span class="head-menu-button" onclick="openMenu()">MENU</span>
     </div>
-    <nav class="nav nav-mob">
-        <a href="split-systems.html">каталог товаров</a>
-        <a href="conditioners.html">кондиционеры</a>
-        <a href="delivery-installation.html">доставка</a>
-        <a href="delivery-installation.html">монтаж</a>
-        <a href="service.html">обслуживание</a>
-        <a href="#">гарантия</a>
-        <a href="stock-sale-general.html">акции</a>
-        <a href="contacts.html">контакты</a>
-    </nav>
+    <div class="menu">
+        <nav class="nav" id="nav-mob">
+            <a href="split-systems.html">каталог товаров</a>
+            <a href="conditioners.html">кондиционеры</a>
+            <a href="delivery-installation.html">доставка</a>
+            <a href="delivery-installation.html">монтаж</a>
+            <a href="service.html">обслуживание</a>
+            <a href="#">гарантия</a>
+            <a href="stock-sale-general.html">акции</a>
+            <a href="contacts.html">контакты</a>
+        </nav>
+    </div>
 </header>
 <div class="head__bread-crumbs">
     <div class="container">
@@ -409,7 +412,8 @@
                             </svg>
                         </div>
                         <div class="main__consultation__form__input">
-                            <input name="stock-phone" placeholder="Ваш телефон" type="tel" class="main__stock__form-phone">
+                            <input name="stock-phone" placeholder="Ваш телефон" type="tel"
+                                   class="main__stock__form-phone">
                             <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
                             </svg>
